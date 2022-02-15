@@ -45,7 +45,7 @@ app.post("/", async function (req, res) {
       console.error("Error adding document");
     });
 });
-// listener
+
 app.listen(process.env.PORT || 5000);
 
 module.exports = app;

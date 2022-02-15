@@ -24,7 +24,7 @@ app.get("/", function (req, res) {
   res.json({ msg: "get request" });
 });
 
-app.post("/", async function (req, res) {
+app.post("/mail", async function (req, res) {
   const now = new Date();
   const timeStamp = firebase.firestore.Timestamp.fromDate(now);
   const clientData = req.body;

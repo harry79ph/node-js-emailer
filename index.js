@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.get("/", function (req, res) {
-  res.json({ msg: "get request" });
+  res.send({ msg: "get request" });
 });
 
 app.post("/", async function (req, res) {
